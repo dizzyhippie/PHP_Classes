@@ -1,5 +1,6 @@
 <?php
 
+//Use air as root for the namespace.
 namespace Air;
 
 //This class will extend from the Air Animals class, creating a new level of children for specific animals.

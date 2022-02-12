@@ -1,7 +1,9 @@
 <?php
 
+//use Air as root for namespace.
 namespace Air;
 
+//Import both traits because Geese are OP.
 use Traits\Amphibious;
 use Traits\Run;
 
@@ -29,7 +31,7 @@ class Geese extends Air {
         $parentStatement = parent::flight();
         return $parentStatement . " Although they prefer to hang out on the ground or in water.";
     }
-
+    //Use data from these traits for Geese.
     use Amphibious;
     use Run;
 }

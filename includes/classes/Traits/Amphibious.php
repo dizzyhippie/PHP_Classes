@@ -1,7 +1,9 @@
 <?php
 
+//Use traits as the root for the namespace
 namespace Traits;
 
+//Allows us to give this trait to different classes at different levels of our parent/child hierchy.
 trait Amphibious {
     /**
      * This is for animals who are both on land and water.

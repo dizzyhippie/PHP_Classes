@@ -1,8 +1,9 @@
 <?php
 
+//import namespace
 namespace Water;
 
-//This class will extend from the Water Animals class, creating a new level of children for specific animals.
+//This class will extend from the Water Animals class, creating a new level of children for salmon.
 class Salmon extends Water {
     /**
      * @var string
@@ -17,5 +18,4 @@ class Salmon extends Water {
     public function speak(): string {
         return  "Salmon cannot speak but can darken their skin to communicate.";
     }
-
 }

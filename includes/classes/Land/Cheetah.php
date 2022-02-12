@@ -1,6 +1,8 @@
 <?php
 
+//use Land as the root
 namespace Land;
+//Import traits because they apply to cheetah.
 use Traits\Run;
 
 //This class will extend from the Air Animals class, creating a new level of children for specific animals.
@@ -26,7 +28,6 @@ class Cheetah extends Land {
     public function speak(): string {
         return $this->name . " can growl, hiss and purr. They can communicate with other Cheetahs.";
     }
-
+    //Import traits that apply to Cheetah.
     use Run;
-
 }

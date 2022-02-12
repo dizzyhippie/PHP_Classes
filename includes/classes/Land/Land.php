@@ -23,4 +23,12 @@ class Land extends Animal{
         $parentStatement = parent::food();
         return $parentStatement . "including plants, animals, and if they are starving - trash.";
     }
+
+    /**
+     * This is the 'Land' message going into the training function in training.php
+     * @return string 
+    */
+    public function train(): string {
+        return $this->name . ' show the water how animals to walk!';
+    }
 }
