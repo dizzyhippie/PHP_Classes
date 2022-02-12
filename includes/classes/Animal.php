@@ -5,7 +5,7 @@ class Animal{
      * @var string
     */
     protected $name = 'animal';
-
+    
     /**
      * State what the animal type eats.
      * @return string
@@ -19,7 +19,7 @@ class Animal{
      * @return string
     */
     public function drink(): string {
-        return $this->name . " drink ";
+        return $this->name . " drink water.";
     }
 
     /**
@@ -27,6 +27,6 @@ class Animal{
      * @return string
     */
     public function speak(): string {
-        return $this->name;
+        return $this->name . " can make many different types of sounds. They can sing, warn and threaten other animals.";
     }
 }
