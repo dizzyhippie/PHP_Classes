@@ -31,5 +31,12 @@ class Air extends Animal{
     public function flight(): string {
         return $this->name . " have the ability to fly.";
     }
-    
+
+    /**
+     * This is the 'Air' message going into the training function in training.php
+     * @return string 
+    */
+    public function train(): string {
+        return $this->name . ' teach the land animals how to fly!';
+    }
 }

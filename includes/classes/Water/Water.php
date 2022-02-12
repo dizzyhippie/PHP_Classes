@@ -21,6 +21,7 @@ class Water extends Animal{
     public function food(): string {
         //$parent statement grabs the initial food() return and allows us to modify it instead of overwriting it completely.
         $parentStatement = parent::food();
+        //Take the original statement and add whatever we want to it.
         return $parentStatement . "including algae, smaller fish, and worms on a hook.";
     }
 
@@ -29,15 +30,23 @@ class Water extends Animal{
      * @return string 
     */
     public function drink(): string {
-        //Overwrite the drink function, no need to add on because Fish don't drink anything
+        //Overwrite the drink function, no need to add on because water animals don't typically drink anything
         return $this->name . " don't typically drink, they absorb water through osmosis";
     }
-
+    
      /**
      * State what sound the animal makes
      * @return string
     */
     public function speak(): string {
        return $this->name .  " don't typically make noise, but still can communicate in other ways";
+    }
+
+    /**
+     * This is the 'Water' message going into the training function in training.php
+     * @return string 
+    */
+    public function train(): string {
+        return $this->name . ' teach the air animals how to swim!';
     }
 }

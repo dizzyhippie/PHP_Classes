@@ -1,6 +1,8 @@
 <?php
 
+//use Land as the root
 namespace Land;
+//Import traits because they apply to hippo
 use Traits\Amphibious;
 
 //This class will extend from the Air Animals class, creating a new level of children for specific animals.
@@ -26,8 +28,6 @@ class Hippo extends Land {
     public function speak(): string {
         return $this->name . " mostly moan and groan like they are in pain.";
     }
-
     //Adds the trait of Amphibious to the hippo.
     use Amphibious;
-
 }
