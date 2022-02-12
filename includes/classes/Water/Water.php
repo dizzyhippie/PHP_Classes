@@ -1,5 +1,10 @@
 <?php
 
+//namespaces allow for a better structure by grouping things that work together
+namespace Water;
+//import animal as root for namespace
+use Animal;
+
 // Create a new class that extends from the animal class (grabs data from that class). 
 //Allows you to re use certain functionality.
 class Water extends Animal{
@@ -25,16 +30,14 @@ class Water extends Animal{
     */
     public function drink(): string {
         //Overwrite the drink function, no need to add on because Fish don't drink anything
-        return "Water animals don't drink, they absorb water through osmosis";
+        return $this->name . " don't typically drink, they absorb water through osmosis";
     }
 
-    /**
-     * Adding onto the function about what Water Animals say - building off of the 'Animal.php' function speak
-     * @return string 
+     /**
+     * State what sound the animal makes
+     * @return string
     */
     public function speak(): string {
-        //$parent statement grabs the initial speak() return and allows us to modify it instead of overwriting it completely.
-        $parentStatement = parent::speak();
-        return "Certain " . $parentStatement . " have the ability to talk to eachother. Some do not.";
+       return $this->name .  " don't typically make noise, but still can communicate in other ways";
     }
 }
