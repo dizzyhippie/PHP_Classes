@@ -1,4 +1,4 @@
-# Jacob's PHP Class Assignment
+# Playing with PHP Classes
  
 ## Assignment
 ### Build a Multi layered PHP class structure
